@@ -187,6 +187,35 @@
     text-align: center;
     margin-left: 35%;
   }
+
+  .cart-table {
+    width: 90%;
+    margin: 10% auto;
+  }
+
+  .cart-section .have-code {
+    text-align: center;
+  }
+
+  .have-code-container {
+    width: 90%;
+    margin: 10% auto;
+  }
+}
+
+.cart-section .cart-totals {
+  width: 90%;
+  margin: 10% auto;
+}
+
+.cart-buttons .button {
+  width: 50%;
+  margin: 10% auto;
+}
+
+.button-primary {
+  width: 50%;
+  margin: 10% auto;
 }
 
 /* Small Devices, Tablets */

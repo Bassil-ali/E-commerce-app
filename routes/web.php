@@ -1,4 +1,5 @@
 <?php
+use App\Product;
 
 Route::get('/', 'LandingPageController@index')->name('landing-page');
 
@@ -45,4 +46,11 @@ Route::middleware('auth')->group(function () {
 
     Route::get('/my-orders', 'OrdersController@index')->name('orders.index');
     Route::get('/my-orders/{order}', 'OrdersController@show')->name('orders.show');
+});
+
+
+Route::get('/product', function() {
+    $products =   Product::get();
+
+    return $products;
 });

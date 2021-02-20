@@ -8,7 +8,7 @@ export default {
   created() {
     axios.get(this.url)
       .then(response => {
-          this.imageSrc = response.data.media_details.sizes.medium_large.source_url
+               this.imageSrc = response.data.media_details.sizes.medium_large.source_url
       })
   },
   data() {

@@ -11,6 +11,8 @@ class Category extends Model
 
     protected $table = 'category';
 
+//   \\ protected $with = ['products'];
+
     public function products()
     {
         return $this->belongsToMany('App\Product');

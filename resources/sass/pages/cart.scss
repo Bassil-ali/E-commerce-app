@@ -1,9 +1,15 @@
+*{
+    text-align: center;
+    
+    
+}
+
 .cart-section {
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 10fr ;
     grid-gap: 30px;
     margin: 60px auto;
-
+   
     h2 {
         margin-bottom: 30px;
     }
@@ -54,11 +60,15 @@
         }
 
         .cart-options {
-            color: $text-color;
+            color: white;
             background: transparent;
             font-size: 14px;
             font-weight: 300;
-            padding: 0;
+            padding: 3px 20px;
+            border-radius: 3px;
+            background-color:slategray;
+            margin-bottom: 8px;
+
 
             &:hover {
                 color: lighten($text-color, 30%);
@@ -93,6 +103,7 @@
 
     .cart-buttons {
         display: flex;
+
         justify-content: space-between;
         margin-bottom: 40px;
     }
@@ -132,12 +143,11 @@
     }
   }
 }
-@media only screen and (max-width:992px){
-  .button{
-      margin-bottom:7px;
-  }
+
+
+
  
-}
+
 
 
 

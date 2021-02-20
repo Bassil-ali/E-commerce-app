@@ -31,6 +31,7 @@ class Product extends Model
             'products.description' => 2,
         ],
     ];
+   protected $with  = ['categories'];
 
     public function categories()
     {
